@@ -1,49 +1,45 @@
-#  Pizza Sales Analysis using MySQL
+# Pizza Sales Analysis using MySQL
 
-##  Overview
+## Overview
 
-This project analyzes a pizza restaurant sales dataset using MySQL. The goal is to answer real-world business questions by writing SQL queries ranging from basic aggregations to advanced analytical queries.
+This project analyzes a pizza restaurant sales dataset using MySQL. The objective is to answer real-world business questions through SQL queries ranging from basic data retrieval to advanced analytical queries.
 
 ---
 
-##  Dataset
+## Dataset
 
-The project uses four CSV files:
+The project uses the following CSV files:
 
 - `orders.csv`
 - `order_details.csv`
 - `pizzas.csv`
 - `pizza_types.csv`
 
-These files were imported into MySQL using the **Table Data Import Wizard**.
+These files were imported into MySQL using the Table Data Import Wizard.
 
 ---
 
-##  Database Schema
+## Database Schema
 
 The database consists of four tables:
 
-- **orders**
-- **order_details**
-- **pizzas**
-- **pizza_types**
+- `orders`
+- `order_details`
+- `pizzas`
+- `pizza_types`
 
-The database schema is available in:
-
-```
-schema.sql
-```
+The table definitions are available in `schema.sql`.
 
 ---
 
-##  Project Structure
+## Project Structure
 
-```
-SQL PROJECT/
+```text
+pizza-sales-sql-analysis/
 │
 ├── pizza_sales/
-│   ├── order_details.csv
 │   ├── orders.csv
+│   ├── order_details.csv
 │   ├── pizzas.csv
 │   └── pizza_types.csv
 │
@@ -58,7 +54,7 @@ SQL PROJECT/
 
 ---
 
-##  SQL Concepts Used
+## SQL Concepts Used
 
 - SELECT Statements
 - Filtering
@@ -67,13 +63,13 @@ SQL PROJECT/
 - ORDER BY
 - INNER JOIN
 - Subqueries
-- Common Table Expressions (CTEs)
 - Window Functions
+- Common Table Expressions (CTEs)
 - Ranking Functions
 
 ---
 
-##  Business Questions Solved
+## Business Questions Solved
 
 ### Basic
 
@@ -81,39 +77,31 @@ SQL PROJECT/
 - Calculate the total revenue generated from pizza sales.
 - Identify the highest-priced pizza.
 - Identify the most common pizza size ordered.
-- List the top 5 most ordered pizza types.
+- List the top five most ordered pizza types along with their quantities.
 
 ### Intermediate
 
-- Calculate the total quantity ordered for each pizza category.
-- Determine the distribution of orders by hour.
-- Analyze category-wise pizza distribution.
+- Calculate the total quantity of each pizza category ordered.
+- Determine the distribution of orders by hour of the day.
+- Analyze the category-wise distribution of pizzas.
 - Calculate the average number of pizzas ordered per day.
-- Find the top 3 pizza types based on revenue.
+- Determine the top three pizza types based on revenue.
 
 ### Advanced
 
 - Calculate the percentage contribution of each pizza category to total revenue.
 - Analyze cumulative revenue over time.
-- Identify the top 3 pizza types by revenue within each category.
+- Determine the top three pizza types by revenue within each pizza category.
 
 ---
 
-##  How to Run
-
-1. Create a new database in MySQL.
-2. Execute `schema.sql` to create the required tables.
-3. Import the CSV files into their respective tables.
-4. Run the SQL scripts inside the `queries` folder.
-
----
-
-##  Tools Used
+## Tools Used
 
 - MySQL 8.0
 - MySQL Workbench
 - Visual Studio Code
-- Git & GitHub
+- Git
+- GitHub
 
 ---
 
@@ -122,11 +110,20 @@ SQL PROJECT/
 - SQL Query Writing
 - Data Analysis
 - Data Aggregation
-- Relational Database Management
+- Relational Database Design
+- Data Modeling
 - Business Insight Generation
 - Window Functions
 - Query Optimization
-- Data Modeling
+
+---
+
+## How to Run
+
+1. Create a MySQL database.
+2. Execute `schema.sql` to create the required tables.
+3. Import the CSV files into their respective tables.
+4. Run the SQL scripts inside the `queries` folder.
 
 ---
 
@@ -134,4 +131,5 @@ SQL PROJECT/
 
 **Atif Khan**
 
-M.Sc. Bioinformatics | Aspiring Data Analyst
+M.Sc. Bioinformatics  
+Aspiring Data Analyst
